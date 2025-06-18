@@ -1,0 +1,100 @@
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="menu, system, gamecarousel">
+		<!-- <helpsystem name="help">
+			<origin>1 0</origin>
+			<pos>0.965 0.935</pos>
+			<fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<forceUppercase>false</forceUppercase>
+
+			<textColor ifSubset="theme:dark">FFFFFFFF</textColor>
+			<textColor ifSubset="theme:white">0f0f0fFF</textColor>
+
+			<iconUpDown>./white/updown.png</iconUpDown>
+			<iconLeftRight>./white/leftright.png</iconLeftRight>
+			<iconUpDownLeftRight>./white/all.png</iconUpDownLeftRight>
+			<iconA>./white/a.png</iconA>
+			<iconB>./white/b.png</iconB>
+			<iconX>./white/x.png</iconX>
+			<iconY>./white/y.png</iconY>
+			<iconL>./white/l.png</iconL>
+			<iconR>./white/r.png</iconR>
+			<iconStart>./white/plus.png</iconStart>
+			<iconSelect>./white/minus.png</iconSelect>
+		</helpsystem> -->
+
+		<helpsystem name="help">
+			<pos>9999</pos>
+			<visible>false</visible>
+			<zIndex>0</zIndex>
+		</helpsystem>
+
+		<stackpanel name="helpsystem_custom_Plus" extra="static">
+			<origin>1 0</origin>
+			<pos>0.758 0.928</pos>
+			<size>0.5 0.035</size>
+			<zIndex>9999</zIndex>
+
+			<container>
+				<size>1 1</size>
+				<stackpanel>
+					<size>1 1</size>
+					<pos>0 0</pos>
+					<separator>15</separator>
+
+					<image name="button_Plus">
+						<size> 1</size>
+						<path>./resources/iconsets/white/Plus.png</path>
+					</image>
+
+					<text name="label_Plus">
+						<fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+						<fontSize>0.032</fontSize>
+						<forceUppercase>false</forceUppercase>
+						<text>Opções</text>
+						<color>ffffff</color>
+					</text>
+
+				</stackpanel>
+
+			</container>
+
+		</stackpanel>
+
+		<stackpanel name="helpsystem_custom_A" extra="static">
+			<origin>1 0</origin>
+			<pos>0.8725 0.928</pos>
+			<size>0.5 0.035</size>
+			<zIndex>9999</zIndex>
+
+			<container>
+				<size>1 1</size>
+				<stackpanel>
+					<size>1 1</size>
+					<pos>0 0</pos>
+					<separator>15</separator>
+
+					<image name="button_A">
+						<size> 1</size>
+						<path>./resources/iconsets/white/A.png</path>
+					</image>
+
+					<text name="label_A">
+						<fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+						<fontSize>0.032</fontSize>
+						<forceUppercase>false</forceUppercase>
+						<text>Iniciar</text>
+						<color>ffffff</color>
+					</text>
+
+				</stackpanel>
+
+			</container>
+
+		</stackpanel>
+
+	</view>
+
+</theme>

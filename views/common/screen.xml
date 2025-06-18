@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+
+    <view name="screen">
+
+        <!-- Controller Activity -->
+        <controllerActivity name="controllerActivity">
+            <origin>0 0</origin>
+            <pos>0.045 0.93</pos>
+            <size>0.035 0.035</size>
+            <itemSpacing>0.015</itemSpacing>
+            <imagePath>./resources/indicators/default.svg</imagePath>
+
+            <color ifSubset="theme:dark">ffffff</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+
+            <activityColor ifSubset="theme:dark">ffffff80</activityColor>
+            <activityColor ifSubset="theme:white">0f0f0f80</activityColor>
+
+            <hotkeyColor ifSubset="theme:dark">ffffff80</hotkeyColor>
+            <hotkeyColor ifSubset="theme:white">0f0f0f80</hotkeyColor>
+
+            <zIndex>99</zIndex>
+        </controllerActivity>
+
+        <!-- Clock -->
+        <text name="clock" extra="true">
+            <origin>1 0</origin>
+            <pos>0.897 0.075</pos>
+            <size>0.5 0.1</size>
+            <fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+            <fontSize>0.042</fontSize>
+            <color ifSubset="theme:dark">ffffff</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+            <alignment>right</alignment>
+            <zIndex>99</zIndex>
+        </text>
+
+    </view>
+
+</theme>
