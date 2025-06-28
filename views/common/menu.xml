@@ -4,19 +4,19 @@
 
     <view name="menu">
         <menuText name="menutitle">
-            <fontPath>./resources/fonts/Roboto-Condensed-Bold.ttf</fontPath>
+            <fontPath>./resources/fonts/RobotoCondensed-Bold.ttf</fontPath>
             <fontSize>0.03</fontSize>
             <color>ffffff</color>
         </menuText>
 
         <menuText name="menufooter">
-            <fontPath>./resources/fonts/Roboto-Condensed-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
             <fontSize>0.018</fontSize>
             <color>868686</color>
         </menuText>
 
         <menuText name="menutext">
-            <fontPath>./resources/fonts/Roboto-Condensed-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
             <fontSize>0.022</fontSize>
             <color>868686</color>
             <separatorColor>222222</separatorColor>
@@ -27,7 +27,7 @@
         </menuText>
 
         <menuTextSmall name="menutextsmall">
-            <fontPath>./resources/fonts/Roboto-Condensed-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
             <fontSize>0.016</fontSize>
             <color>FFFFFF</color>
         </menuTextSmall>
@@ -57,7 +57,7 @@
         </menuIcons>
 
         <helpsystem name="help">
-            <fontPath>./resources/fonts/Roboto-Condensed-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/switch.otf</fontPath>
             <fontSize>0.022</fontSize>
             <pos>0.06 0.955</pos>
             <textColor>FFFFFF</textColor>

@@ -47,7 +47,7 @@
             <origin>0 0</origin>
             <pos>0 0</pos>
             <size>1 0.1</size>
-            <fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/switch.otf</fontPath>
             <fontSize>0.032</fontSize>
             <color>FFFFFF</color>
             <glowColor>222222</glowColor>

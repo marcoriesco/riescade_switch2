@@ -2,28 +2,6 @@
 	<formatVersion>4</formatVersion>
 
 	<view name="menu, system, gamecarousel">
-		<!-- <helpsystem name="help">
-			<origin>1 0</origin>
-			<pos>0.965 0.935</pos>
-			<fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
-			<fontSize>0.025</fontSize>
-			<forceUppercase>false</forceUppercase>
-
-			<textColor ifSubset="theme:dark">FFFFFFFF</textColor>
-			<textColor ifSubset="theme:black">0f0f0fFF</textColor>
-
-			<iconUpDown>./black/updown.png</iconUpDown>
-			<iconLeftRight>./black/leftright.png</iconLeftRight>
-			<iconUpDownLeftRight>./black/all.png</iconUpDownLeftRight>
-			<iconA>./black/a.png</iconA>
-			<iconB>./black/b.png</iconB>
-			<iconX>./black/x.png</iconX>
-			<iconY>./black/y.png</iconY>
-			<iconL>./black/l.png</iconL>
-			<iconR>./black/r.png</iconR>
-			<iconStart>./black/plus.png</iconStart>
-			<iconSelect>./black/minus.png</iconSelect>
-		</helpsystem> -->
 
 		<helpsystem name="help">
 			<pos>9999</pos>
@@ -50,7 +28,7 @@
 					</image>
 
 					<text name="label_Plus">
-						<fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+						<fontPath>./resources/fonts/switch.otf</fontPath>
 						<fontSize>0.032</fontSize>
 						<forceUppercase>false</forceUppercase>
 						<text>Opções</text>
@@ -82,7 +60,7 @@
 					</image>
 
 					<text name="label_A">
-						<fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+						<fontPath>./resources/fonts/switch.otf</fontPath>
 						<fontSize>0.032</fontSize>
 						<forceUppercase>false</forceUppercase>
 						<text>Iniciar</text>

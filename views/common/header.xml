@@ -4,10 +4,21 @@
 
     <view name="system, gamecarousel">
 
+        <!-- batteryIcon icon -->
+        <image name="batteryIcon2" extra="static">
+            <origin>1 0</origin>
+            <pos>0.962 0.092</pos>
+            <size>0.028 0.029</size>
+            <color ifSubset="theme:dark">e0e0e0</color>
+            <color ifSubset="theme:white">0f0f0f</color>
+            <path>./resources/indicators/battery-50.svg</path>
+            <zIndex>99</zIndex>
+        </image>
+
         <!-- UserInfo -->
         <image name="platforms_avatar" extra="static">
             <origin>1 0</origin>
-            <pos>0.084 0.069</pos>
+            <pos>0.084 0.07</pos>
             <maxSize>0.075 0.075</maxSize>
             <path>./resources/_parts/user.png</path>
             <roundCorners>0.5</roundCorners>
@@ -36,21 +47,23 @@
             <onclick>cheevos</onclick>
         </rectangle>
 
-    </view>
+        <!-- Platform Names -->
+        <text name="platforms_hardwareType" extra="true">
+            <!-- <backgroundColor>ffffff50</backgroundColor> -->
+            <size>0.5 0.055</size>
 
-    <view name="system, gamecarousel">
+            <pos>0.1727 0.84</pos>
+            <pos if="${system.hardwareType} == 'arcade'">0.03 0.84</pos>
+            <pos if="${system.hardwareType} == 'computer'">0.1 0.84</pos>
+            <pos if="${system.hardwareType} == 'console'">0.166 0.84</pos>
+            <pos if="${system.hardwareType} == 'extension'">0.233 0.84</pos>
+            <pos if="${system.hardwareType} == 'pinball'">0.297 0.84</pos>
+            <pos if="${system.hardwareType} == 'port'">0.365 0.84</pos>
+            <pos if="${system.hardwareType} == 'portable'">0.425 0.84</pos>
 
-        <text name="hardwareType" extra="true">
-            <pos if="${system.hardwareType} == 'arcade'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'computer'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'console'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'extension'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'pinball'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'port'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'portable'">0.245 0.84</pos>
-
+            <fontPath>./resources/fonts/switch.otf</fontPath>
             <fontSize>0.036</fontSize>
-            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <alignment>center</alignment>
 
             <text if="${system.hardwareType} == 'arcade'">Arcades</text>
             <text if="${system.hardwareType} == 'computer'">Computadores</text>
@@ -60,10 +73,11 @@
             <text if="${system.hardwareType} == 'port'">Ports</text>
             <text if="${system.hardwareType} == 'portable'">Portáteis</text>
 
-            <color>3171c4FF</color>
+            <color>4b9cf5FF</color>
             <zIndex>9999</zIndex>
         </text>
 
+        <!-- Platforms Icons (Switch Menu)-->
         <rectangle name="platforms_background" extra="static">
             <pos>0.17 0.715</pos>
             <size>0.67 0.125</size>
@@ -74,10 +88,10 @@
             <zIndex>1998</zIndex>
         </rectangle>
 
-        <image name="platform_Retrobat" extra="static">
+        <image name="platform_Switch" extra="static">
             <pos>0.18 0.734</pos>
             <size> 0.09</size>
-            <path>./resources/switchmenu/retrobat.svg</path>
+            <path>./resources/switchmenu/switch.png</path>
             <zIndex>2000</zIndex>
         </image>
 
@@ -96,7 +110,7 @@
         </image>
 
         <image name="platform_Console" extra="static">
-            <pos>0.4004 0.752</pos>
+            <pos>0.4004 0.754</pos>
             <size> 0.045</size>
             <path>./resources/switchmenu/switch_console.svg</path>
             <zIndex>2000</zIndex>
@@ -186,25 +200,23 @@
 
     <view name="gamecarousel">
 
-        <text name="hardwareType" extra="true">
-            <!-- <backgroundColor>ffffff50</backgroundColor> -->
-            <pos if="${system.hardwareType} == 'arcade'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'computer'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'console'">0.17 0.84</pos>
-            <pos if="${system.hardwareType} == 'extension'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'pinball'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'port'">0.245 0.84</pos>
-            <pos if="${system.hardwareType} == 'portable'">0.245 0.84</pos>
-
-            <size>0.5 0.055</size>
+        <text name="platforms_hardwareType" extra="true">
+            <pos>-0.045 0.84</pos>
+            <pos if="${system.hardwareType} == 'arcade'">0.03 0.84</pos>
+            <pos if="${system.hardwareType} == 'computer'">0.1 0.84</pos>
+            <pos if="${system.hardwareType} == 'console'">0.166 0.84</pos>
+            <pos if="${system.hardwareType} == 'extension'">0.233 0.84</pos>
+            <pos if="${system.hardwareType} == 'pinball'">0.297 0.84</pos>
+            <pos if="${system.hardwareType} == 'port'">0.365 0.84</pos>
+            <pos if="${system.hardwareType} == 'portable'">0.425 0.84</pos>
 
             <fontSize>0.036</fontSize>
-            <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+            <fontPath>./resources/fonts/switch.otf</fontPath>
 
             <text>${system.fullName}</text>
 
             <alignment>center</alignment>
-            <color>3171c4FF</color>
+            <color>4b9cf5FF</color>
             <zIndex>9999</zIndex>
         </text>
 

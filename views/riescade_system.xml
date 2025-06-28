@@ -39,7 +39,7 @@
                         <visible>!exists({system:logo})</visible>
                         <text>{system:fullName}</text>
                         <fontSize>0.032</fontSize>
-                        <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
+                        <fontPath>./resources/fonts/switch.otf</fontPath>
                         <color ifSubset="theme:dark">FFFFFFFF</color>
                         <color ifSubset="theme:black">0f0f0fFF</color>
                         <forceUppercase>false</forceUppercase>
@@ -65,12 +65,9 @@
             <origin>0 0</origin>
             <pos>0.0738 0.265</pos>
             <size>0.212 0.38</size>
-            <path>./resources/_parts/white.png</path>
+            <path>./resources/_parts/selected_s.png</path>
             <opacity>0</opacity>
             <roundCorners>0.1</roundCorners>
-            <color>266ff2</color>
-            <colorEnd>e4befb</colorEnd>
-            <gradientType>horizontal</gradientType>
             <autoFade>true</autoFade>
             <zIndex>90</zIndex>
 
@@ -131,7 +128,7 @@
 
         <stackpanel name="systemInfo_custom" extra="static">
             <origin>0 0</origin>
-            <pos>0.127 0.215</pos>
+            <pos>0.09 0.212</pos>
             <size>0.8 0.04</size>
             <zIndex>99</zIndex>
 
@@ -191,7 +188,7 @@
                         <text if="${system.name} == 'magazine'" lang="fr">Accéder aux Magazines</text>
                         <text if="${system.name} == 'all'" lang="fr">Tous les jeux</text>
 
-                        <fontPath>./resources/fonts/Roboto-Regular.ttf</fontPath>
+                        <fontPath>./resources/fonts/switch.otf</fontPath>
                         <fontSize>0.034</fontSize>
                         <color>3ad3fcFF</color>
                         <alignment>center</alignment>
@@ -249,8 +246,8 @@
                         <text if="${system.name} == 'magazine'" lang="fr">({system:total} magazines)</text>
                         <text if="${system.name} == 'all'" lang="fr">({system:total} jeux)</text>
 
-                        <fontPath>./resources/fonts/RobotoCondensed-Regular.ttf</fontPath>
-                        <fontSize>0.028</fontSize>
+                        <fontPath>./resources/fonts/switch.otf</fontPath>
+                        <fontSize>0.026</fontSize>
                         <color ifSubset="theme:dark">FFFFFF</color>
                         <color ifSubset="theme:white">0f0f0f</color>
                         <alignment>center</alignment>
